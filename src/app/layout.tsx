@@ -1,4 +1,5 @@
 import React from "react";
+import SideBar from "@/components/SideBar";
 import "./globals.css";
 
 interface RootLayoutProps {
@@ -8,6 +9,7 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <>
+      <SideBar />
       <main>{children}</main>
     </>
   );

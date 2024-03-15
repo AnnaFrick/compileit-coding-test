@@ -3,7 +3,6 @@ import RootLayout from "@/app/layout";
 import ListTrending from "@/components/ListTrending";
 import ListNowPlaying from "@/components/ListNowPlaying";
 import ListTopRated from "@/components/ListTopRated";
-import SideBar from "@/components/SideBar";
 import SearchField from "@/components/SearchField";
 
 const HomePage: React.FC = () => {
@@ -17,7 +16,6 @@ const HomePage: React.FC = () => {
   return (
     <RootLayout>
       <div className="flex">
-        <SideBar />
         <div className="flex flex-col w-full">
           <div className="flex p-24">
             <SearchField onSearch={handleSearchResults} />
@@ -30,6 +28,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
     </RootLayout>
+
   );
 };
 
