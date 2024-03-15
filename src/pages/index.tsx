@@ -16,14 +16,18 @@ const HomePage: React.FC = () => {
 
   return (
     <RootLayout>
-      <SearchField onSearch={handleSearchResults} />
       <div className="flex">
-      <SideBar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <ListTrending />
-        <ListNowPlaying />
-        <ListTopRated />
-      </main>
+        <SideBar />
+        <div className="flex flex-col w-full">
+          <div className="flex p-24">
+            <SearchField onSearch={handleSearchResults} />
+          </div>
+          <div className="flex flex-col space-y-8 p-24">
+            <ListTrending />
+            <ListNowPlaying />
+            <ListTopRated />
+          </div>
+        </div>
       </div>
     </RootLayout>
   );

@@ -1,7 +1,7 @@
 ##  This is my movie-app
 
 **To do:**
-- [] Change Bearer authorization token to one from .env file
+- [x] Change Bearer authorization token to one from .env file
 - [] Edit the search bar
 - [] Edit the trending listing
 - [] Edit the side bar

@@ -10,14 +10,10 @@ const SearchField: React.FC<SearchFieldProps> = ({ onSearch }) => {
     const [query, setQuery] = useState<string>(''); // State for the search query
     const [results, setResults] = useState<any[]>([]); // State for storing search results
 
-    // Function to handle search submission
     const handleSearch = async () => {
         try {
-            // Call the search function with the current query
             const searchResults = await search(query);
-            // Update the search results state
             setResults(searchResults);
-            // Pass the search results to the parent component via the onSearch prop
             onSearch(searchResults);
         } catch (error) {
             console.error('Error performing search:', error);
