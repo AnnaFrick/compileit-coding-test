@@ -13,7 +13,7 @@ const SideBar: React.FC = () => {
     }
 
     return (
-        <nav className={`md:block ${isSidebarOpen ? 'block' : 'hidden'}`}>
+        <nav className={`md:block ${isSidebarOpen ? 'block' : 'hidden'} fixed`}>
             <h2 className={`mb-6 text-2xl font-semibold`}>Movie App</h2>
             <div className="flex flex-col justify-center">
                 <a href="/" className={`mb-4 text-lg font-semibold ${router.pathname === '/' ? 'text-gray-200' : 'text-gray-500 hover:text-white'}`}>
