@@ -9,11 +9,11 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <>
-      <div className="grid grid-cols-6 md:grid-cols-5">
-        <div className="flex flex-col h-full bg-gray-800 p-4">
+      <div className="grid md:grid-cols-6">
+        <div className="col-span-1 md:col-span-1">
           <SideBar />
         </div>
-        <div className="col-span-5 md:col-span-4">
+        <div className="md:col-span-5">
           <main>{children}</main>
         </div>
       </div>
