@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
     <RootLayout>
       <div className="flex">
         <div className="flex flex-col w-full">
-          <div className="flex p-24">
+          <div className="flex p-6">
             <SearchField onSearch={handleSearchResults} />
           </div>
           <div className="p-4">

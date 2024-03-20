@@ -33,17 +33,17 @@ const SearchField: React.FC<SearchFieldProps> = ({ onSearch }) => {
                     placeholder="Search movie titles..."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    className="text-black border border-gray-300 rounded-lg p-2 mb-2 focus:outline-none"
+                    className="text-black border border-gray-300 rounded-full p-1 focus:outline-none"
                 />
                 <button
                     onClick={handleSearch} // Call handleSearch function on button click
-                    className="border border-white rounded-lg p-2 mb-2 hover:bg-gray-800 hover:border-gray-300 transition-colors"
+                    className="rounded-lg p-2 mb-2 hover:text-gray-500 transition-colors"
                 >
                     Search
                 </button>
                 <button
                     onClick={clearSearch} // Call clearSearch function on button click
-                    className="border border-white rounded-lg p-2 mb-2 ml-2 hover:bg-gray-800 hover:border-gray-300 transition-colors"
+                    className="rounded-lg p-2 mb-2 ml-2 hover:text-gray-500 transition-colors"
                 >
                     Clear
                 </button>
