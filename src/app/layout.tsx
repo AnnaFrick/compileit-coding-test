@@ -13,7 +13,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         <div className="flex flex-col h-full bg-gray-800 p-4">
           <SideBar />
         </div>
-        <div className="col-span-4 md:col-span-4">
+        <div className="col-span-5 md:col-span-4">
           <main>{children}</main>
         </div>
       </div>

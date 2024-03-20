@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
           <div className="flex p-24">
             <SearchField onSearch={handleSearchResults} />
           </div>
-          <div className="">
+          <div className="p-4">
             <ListTrending />
             <ListNowPlaying />
             <ListTopRated />

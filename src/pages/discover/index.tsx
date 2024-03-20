@@ -14,11 +14,15 @@ const DiscoverPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="flex p-24">
-        <SearchField onSearch={handleSearchResults} />
-      </div>
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
-        <DiscoverMovies />
+       <div className="flex">
+        <div className="flex flex-col w-full">
+          <div className="flex p-24">
+            <SearchField onSearch={handleSearchResults} />
+          </div>
+          <div className="p-4">
+            <DiscoverMovies />
+          </div>
+        </div>
       </div>
     </RootLayout>
   );
